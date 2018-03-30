@@ -6,6 +6,16 @@ $(document).ready(function(){
     imgURL.push('images/snowboarding.jpg');
     imgURL.push('images/KilkennyCastle.jpg');
     imgURL.push('images/apartment.jpg');
+    imgURL.push('images/13.jpg');
+    imgURL.push('images/14.jpg');
+    imgURL.push('images/6.jpg');
+    imgURL.push('images/8.jpg');
+    imgURL.push('images/11.jpg');
+    imgURL.push('images/9.jpg');
+    imgURL.push('images/12.jpg');
+    imgURL.push('images/napa.jpg');
+    imgURL.push('images/10.jpg');
+    imgURL.push('images/engagement.jpg');
 
     var imgStr = "<img src=" + imgURL[i] + " style='width:100%'>";
     $('#ImageDiv').html(imgStr);
