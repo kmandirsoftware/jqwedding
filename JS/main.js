@@ -56,3 +56,23 @@ function registeruser(choices) {
         }
     });
 }
+$(function () {
+    $("#basicICal").on("tap",function(){
+      buildICSEntry();
+   });
+});
+
+var buildICSEntry = function(){
+
+    	var calEntry = icsFormatter();
+
+    	var title = 'Keith & Nikki\'s Wedding';
+    	var place = '150 Clayton Lane, Denver, Colorado, 80206';
+    	var begin = new Date('9/1/2018 5:00 pm');
+    	var end = new Date('8/1/2018 11:00 pm');
+
+    	var description = 'Keith & Nikki\'s Wedding Day! Located at 150 Clayton Lane, Denver, Colorado, 80206';
+
+		calEntry.addEvent(title,description, place, begin.toUTCString(), begin.toUTCString());
+		calEntry.download('KeithandNikkiWeddingDay');
+ }
