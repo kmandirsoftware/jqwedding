@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reception Dinner Selection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="responsive.css" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+        <div role="main" class="ui-content">
+            <a href="/" data-transition="slide" data-direction="reverse">Back</a>
+            <form>
+               <input type="text" name="text-1" id="textName" value="" placeholder="Full Name">
+            </form>
+            <div>
+            <a>
+            <img class="media-object pull-left" src="images/steak.png">
+            </a>
+                   <input type="checkbox" name="mealchoice" class="chk" id="steak" > 
+                   <label for="steak">10oz New York Strip</label>
+            <p>root vegetable and potato puree ~ wilted spinach ~ blackened onions ~ beef jus</p>
+           </div>  
+            <div>
+            <a>
+            <img class="media-object pull-left" src="images/chicken.png">
+            </a>
+                   <input type="checkbox" name="mealchoice" class="chk" id="chicken"  > 
+                   <label for="chicken">Roasted Free Range Chicken</label>
+            <p>wild mushroom ~ root vegetable and potato pure ~ sage brown butter ~ grated pecorino cheese ~      truffle chicken broth</p>
+           </div>  
+            <div>
+            <a>
+            <img class="media-object pull-left" src="images/veggie.png">
+            </a>
+                   <input type="checkbox" name="mealchoice" class="chk" id="veggie"  > 
+                   <label for="veggie">Vegetarian</label>
+                   <p>lots of good veggies!</p>
+           </div>  
+           <div>
+               <input type="button" data-theme="b" name="submit" id="submit" value="Submit">
+           </div>
+        </div>
+    </div>
+
+  </body>
+</html>
