@@ -1,5 +1,5 @@
-var base = 'http://192.168.1.14:5000/';
-//var base = 'https://keithandnikki.herokuapp.com/';
+//var base = 'http://192.168.1.14:5000/';
+var base = 'https://keithandnikki.herokuapp.com/';
 var registerservice = base + 'register';
 
 $(document).ready(function(){
