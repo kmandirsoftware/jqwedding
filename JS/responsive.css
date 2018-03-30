@@ -5,7 +5,7 @@ H1 { color: green; }
 a:link { color:purple; }
 
 /* body { background: #eee; } */
-body  { background: transparent url(/images/web2.jpg) 0 0 no-repeat; } 
+.ui-body  { font-weight: bold; background: transparent url(/images/web2.jpg) 0 0 no-repeat; } 
 /* Stack the two content containers */
 .main,
 .sidebar { display:block; width:100%; }
