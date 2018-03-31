@@ -4,6 +4,7 @@ var dateFormat = require('dateformat');
 var now = new Date();
 var date=dateFormat(now, "yyyymmdd");
 var user = require("./user.js");
+var webinfo = require("./web.js");
 console.log(date);
 
 // return APIs
@@ -18,12 +19,16 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 app.get('/',function(req,res){
-res.render('index.html');
+   res.render('index.html');
+   webinfo.entry(res,process_data);
 });
 
 app.get('/register',function(req,res){
     console.log(req.query);
    user.register(req.query,res,process_data);
+});
+app.get('/entry',function(req,res){
+   webinfo.entry(res,process_data);
 });
 
 app.set('port', (process.env.PORT || 5000));
