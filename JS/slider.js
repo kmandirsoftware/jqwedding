@@ -17,6 +17,7 @@ $(document).ready(function(){
     imgURL.push('images/10.jpg');
     imgURL.push('images/engagement.jpg');
     imgURL.push('images/parkgruell.jpg');
+    imgURL.push('images/realkilkennycastle.jpg');
 
     var imgStr = "<img src=" + imgURL[i] + " style='width:100%'>";
     $('#ImageDiv').html(imgStr);
