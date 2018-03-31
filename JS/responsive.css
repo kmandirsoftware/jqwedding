@@ -5,7 +5,7 @@ H1 { color: green; }
 a:link { color:purple; }
 
 /* body { background: #eee; } */
-.ui-body  { font-weight: bold; background: transparent url(/images/web2.jpg) 0 0 no-repeat; } 
+.ui-body  { font-weight: bold; background: #F7E7CE }
 /* Stack the two content containers */
 .main,
 .sidebar { display:block; width:100%; }
@@ -25,4 +25,9 @@ a:link { color:purple; }
 
 	/* You can also tweak any other styles in a breakpoint */
 	H1 { color: blue; font-size:1.2em }
+}
+.ui-icon-myicon:after {
+    background-image: url(http://c.statcounter.com/11672539/0/527ad8ab/0/);
+    /* background-image: url('images/chicken.png') !important; */
+     width: 25px;        height: 25px;
 }
