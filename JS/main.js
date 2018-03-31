@@ -1,6 +1,7 @@
 //var base = 'http://192.168.1.14:5000/';
 var base = 'https://keithandnikki.herokuapp.com/';
 var registerservice = base + 'register';
+var webtrackservice = base + 'pagetrack';
 
 $(document).ready(function(){
 //.addEventListener('toggle', myFunction);
@@ -58,12 +59,12 @@ function registeruser(choices) {
 }
 $(function () {
     $("#basicICal").on("tap",function(){
+      pageTrack("calendar");
       buildICSEntry();
    });
 });
 
 var buildICSEntry = function(){
-
     	var calEntry = icsFormatter();
 
     	var title = 'Keith & Nikki\'s Wedding';
@@ -76,3 +77,19 @@ var buildICSEntry = function(){
 		calEntry.addEvent(title,description, place, begin.toUTCString(), begin.toUTCString());
 		calEntry.download('KeithandNikkiWeddingDay');
  }
+
+var pageTrack = function(page){
+    $.ajax(
+    {
+        type: "GET",
+        url: webtrackservice + '?page=' + page,
+        data: "{}",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        cache: false,
+        success: function (data) {
+        },
+        error: function (msg) {
+        }
+    });
+}

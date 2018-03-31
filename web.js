@@ -15,12 +15,12 @@ client.connect()
 
 module.exports = {
 
-   entry: function(resb,callback) {
+   entry: function(datain,resb,callback) {
    var now = new Date();
    var date=dateFormat(now, "yyyy-mm-dd HH:MM:ss");
    var query = {
-     text: 'INSERT INTO webstats(accessdatetime) VALUES($1)',
-     values: [date],
+     text: 'INSERT INTO webstats(accessdatetime,pagename) VALUES($1,$2)',
+     values: [date,datain],
   }
    client.query(query, (err, res) => {
      if (err) {

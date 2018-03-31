@@ -20,15 +20,16 @@ app.engine('html', require('ejs').renderFile);
 
 app.get('/',function(req,res){
    res.render('index.html');
-   webinfo.entry(res,process_data);
+   webinfo.entry('index.html',res,process_data);
 });
 
 app.get('/register',function(req,res){
     console.log(req.query);
    user.register(req.query,res,process_data);
 });
-app.get('/entry',function(req,res){
-   webinfo.entry(res,process_data);
+app.get('/pagetrack',function(req,res){
+    console.log(req.query.page);
+   webinfo.entry(req.query.page,res,process_data);
 });
 
 app.set('port', (process.env.PORT || 5000));
