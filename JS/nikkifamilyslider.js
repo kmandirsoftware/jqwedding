@@ -5,6 +5,8 @@ $(document).ready(function(){
 
     imgURL.push('images/kaylakarl.jpg');
     imgInfo.push('Nikki\'s Mom Kayla and step dad Carl');
+    imgURL.push('images/tristaandcj.jpg');
+    imgInfo.push('Nikki\'s brother CJ and girlfriend Trista');
     imgURL.push('images/philandclella.jpg');
     imgInfo.push('Nikki\'s Dad Phillip and step mom Clella');
 
