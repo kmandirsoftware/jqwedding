@@ -5,6 +5,8 @@ $(document).ready(function(){
 
     imgURL.push('images/kaylakarl.jpg');
     imgInfo.push('Nikki\'s Mom Kayla and step dad Carl');
+    imgURL.push('images/philandclella.jpg');
+    imgInfo.push('Nikki\'s Dad Phillip and step mom Clella');
 
     var pstyle = "<p style='font-family:Brush Script Std, cursive;font-weight:bold;font-size:2.0em;margin: 0;padding: 0 auto;'>";
     var imgStr = "<img src=" + imgURL[i] + " style='width:100%'>";
