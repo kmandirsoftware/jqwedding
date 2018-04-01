@@ -23,6 +23,15 @@ $(document).ready(function(){
         imgStr += pstyle + imgInfo[i] + "</p>";
     $('#ImageDiv').html(imgStr);
 
+    var timer = setInterval(function() {
+        nextImage(i,imgURL,imgInfo,pstyle);
+        if (i < (imgURL.length - 1)) {
+             i++
+         } else {
+             i = 0;
+         }
+    }, 5*1000)
+
 
     $("#myImagePage").swiperight(function () {
         if (i < (imgURL.length - 1)) {

@@ -70,13 +70,3 @@ $(document).ready(function(){
         $('#ImageDiv').html(imgStr);
     });
 });
-function nextImage(i,imgURL,imgInfo,pstyle){
-        if (i < (imgURL.length - 1)) {
-            i++
-        } else {
-            i = 0;
-        }
-        var imgStr = "<img src=" + imgURL[i] + " style='width:100%'>";
-        imgStr += pstyle + imgInfo[i] + "</p>";
-        $('#ImageDiv').html(imgStr);
-}
