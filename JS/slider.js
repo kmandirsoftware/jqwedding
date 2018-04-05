@@ -7,7 +7,7 @@ $(document).ready(function(){
     imgURL.push('images/snowboarding.jpg');
     imgInfo.push('Family reunion in Washington');
     imgURL.push('images/KilkennyCastle.jpg');
-    imgInfo.push('Grand Mayan Resort, Cancun');
+    imgInfo.push('Grand Mayan Resort');
     imgURL.push('images/apartment.jpg');
     imgInfo.push('Washington Mount Rainier');
     imgURL.push('images/13.jpg');
@@ -35,7 +35,7 @@ $(document).ready(function(){
     imgURL.push('images/realkilkennycastle.jpg');
     imgInfo.push('KilKenny Castle in Ireland');
 
-    var pstyle = "<p style='font-family:Brush Script Std, cursive;font-weight:bold;font-size:2.0em;margin: 0;padding: 0 auto;'>";
+    var pstyle = "<p style='font-family:Brush Script Std, cursive;font-weight:bold;font-size:2.0em;margin: 0;padding: 0 auto;text-align:center'>";
     var imgStr = "<img src=" + imgURL[i] + " style='width:100%'>";
         imgStr += pstyle + imgInfo[i] + "</p>";
     $('#ImageDiv').html(imgStr);

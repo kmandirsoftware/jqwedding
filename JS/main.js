@@ -1,4 +1,4 @@
-//var base = 'http://192.168.1.14:5000/';
+//var base = 'http://localhost:5000/';
 var base = 'https://keithandnikki.herokuapp.com/';
 var registerservice = base + 'register';
 var webtrackservice = base + 'pagetrack';
@@ -13,6 +13,7 @@ $(document).ready(function(){
         console.log("caught event!");
         registerusers();
     });
+    //setmyname();
 });
 
 function registerusers(){
@@ -65,6 +66,41 @@ $(function () {
     $("#basicICal").on("tap",function(){
       pageTrack("calendar");
       buildICSEntry();
+   });
+});
+var setmyname = function(){
+         var vars=[];
+          var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+          for (var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+         }
+         var param1 = vars.param1;
+
+         if (param1 != undefined){
+            param1 = decodeURIComponent(decodeURIComponent(param1));
+            document.getElementById("textName").value = param1;
+            console.log(param1);
+         }
+}
+$(function () {
+    $("#declinebtn").on("tap",function(){
+       var choices={};
+       choices.accept='false';
+       var name = document.getElementById("textNamersvp").value;
+       choices.name = name;
+       choices.foodchoice="none";
+       console.log("entered name");
+       console.log(name);
+       registeruser(choices);
+   });
+});
+$(function () {
+    $("#acceptbtn").on("tap",function(){
+       var name = document.getElementById("textNamersvp").value;
+       console.log(name);
+       $.mobile.changePage("form.html",{transition: "slide", reloadPage: true, data:{param1:encodeURIComponent(name)}});
    });
 });
 

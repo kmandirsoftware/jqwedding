@@ -8,17 +8,23 @@ $(document).ready(function(){
     imgURL.push('images/andrewandlouise.jpg');
     imgInfo.push('Keith\'s Nephew Andrew and his beautiful wife Louise');
     imgURL.push('images/susanandronald.jpg');
-    imgInfo.push('Keith\'s sister in law Susan and brother Ronald');
+    imgInfo.push('Keith\'s sister-in-law Susan and brother Ronald');
     imgURL.push('images/lauraandjohn.jpg');
-    imgInfo.push('Keith\'s brother in law John and sister Laura');
+    imgInfo.push('Keith\'s brother-in-law John and sister Laura');
     imgURL.push('images/travis.jpg');
     imgInfo.push('Keith\'s youngest son Travis');
     imgURL.push('images/graceandas.jpg');
     imgInfo.push('Keith\'s daughter Grace and boyfriend Austin');
     imgURL.push('images/alex.jpg');
     imgInfo.push('Keith\'s oldest son Alex');
+    imgURL.push('images/catherine.jpg');
+    imgInfo.push('Keith\'s niece Catherine. Laura\'s daughter');
+    imgURL.push('images/shelly.jpg');
+    imgInfo.push('Keith\'s niece Shelly. Laura\'s oldest daughter');
+    imgURL.push('images/hunter.jpg');
+    imgInfo.push('Keith\'s nephew Hunter. Laura\'s son');
 
-    var pstyle = "<p style='font-family:Brush Script Std, cursive;font-weight:bold;font-size:2.0em;margin: 0;padding: 0 auto;'>";
+    var pstyle = "<p style='font-family:Brush Script Std, cursive;font-weight:bold;font-size:2.0em;margin: 0;padding: 0 auto;text-align:center'>";
     var imgStr = "<img src=" + imgURL[i] + " style='width:100%'>";
         imgStr += pstyle + imgInfo[i] + "</p>";
     $('#ImageDiv').html(imgStr);

@@ -3,12 +3,12 @@ $(document).ready(function(){
     var imgURL = [];
     var imgInfo = [];
 
-    imgURL.push('images/kaylakarl.jpg');
-    imgInfo.push('Nikki\'s Mom Kayla and step dad Carl');
-    imgURL.push('images/tristaandcj.jpg');
-    imgInfo.push('Nikki\'s brother CJ and girlfriend Trista');
-    imgURL.push('images/philandclella.jpg');
-    imgInfo.push('Nikki\'s Dad Phillip and step mom Clella');
+    imgURL.push('images/priest.jpg');
+    imgInfo.push('Keith\'s Nephew Andrew. Officiant');
+    imgURL.push('images/graceandas.jpg');
+    imgInfo.push('Keith\'s daughter Grace and boyfriend Austin. Maid of Honor and Best Man');
+    imgURL.push('images/torri.jpg');
+    imgInfo.push('Clella\'s daughter Torri. Bridesmaid');
 
     var pstyle = "<p style='font-family:Brush Script Std, cursive;font-weight:bold;font-size:2.0em;margin: 0;padding: 0 auto;text-align:center'>";
     var imgStr = "<img src=" + imgURL[i] + " style='width:100%'>";
@@ -23,6 +23,7 @@ $(document).ready(function(){
              i = 0;
          }
     }, 5*1000)
+
 
     $("#myImagePage").swiperight(function () {
         if (i < (imgURL.length - 1)) {

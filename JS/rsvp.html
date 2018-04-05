@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSVP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="responsive.css" rel="stylesheet">
+    <link href="rsvp.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+      <script>
+         pageTrack("rsvp.html");
+      </script>
+    <div data-role="page">
+      <div role="main" class="ui-content">
+            <a href="/" data-transition="slide" data-direction="reverse">Back</a>
+            <form>
+               <input type="text" name="text-1" id="textNamersvp" value="" placeholder="Full Name">
+            </form>
+           <div class="ui-corner-all custom-corners">
+              <div class="ui-bar ui-bar-a">
+                   <a id="acceptbtn" class="ui-btn ui-shadow" data-ajax="false">ACCEPT WITH PLEASURE!</a>
+              </div>
+              <div class="ui-bar ui-bar-a">
+                   <a href="decline.html" id="declinebtn" class="ui-btn ui-shadow" data-ajax="false">DECLINE WITH REGRET</a>
+              </div>
+           </div>
+      </div>
+    </div>
+  </body>
+</html>
